@@ -8,6 +8,78 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        
+        <header>
+            <h1 id="tittle">Formulario de Encuesta de freeCodeCamp</h1>
+            <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar la plataforma</p>
+        </header>
+        <main>
+            <form action="" id="survey-form">
+                <div>
+                    <label for="name" id="name-label"><strong>Nombre</strong> <input type="text" name="name" id="name" class="text" placeholder="Ingresa tu nombre" required></label>
+                </div>
+                <div>
+                    <label for="email" id="email-label"><strong>E-mail</strong> <input type="email" name="email" id="email" class="text" placeholder="Ingresa tu e-mail" required></label>
+                </div>
+                <div> 
+                    <label for="age" id="number-label"><strong>Edad (opcional)</strong> <input type="number" name="age" id="number" class="text" placeholder="Edad" min="10" max="99"></label>
+                </div>
+                <div>
+                    <label for="desplegable1">
+                        <strong>¿Que opción describe mejor su función actual?</strong>                   
+                        <select name="desplegable1" id="dropdown"  class="text">
+                            <option value="0" disabled selected>Selecciona función actual</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trabajo tiempo completo</option>
+                            <option value="3">Aprendiz de tiempo completo</option>
+                            <option value="4">Prefiero no decirlo</option>
+                            <option value="5">Otro</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <p><strong>¿Recomendarias freeCodeCamp a un amigo o amiga?</strong></p>
+                    <label for=""><input type="radio" name="recomend" id="" checked>Definitivamente</label>
+                    <label for=""><input type="radio" name="recomend" id="">Posiblemente</label>
+                    <label for=""><input type="radio" name="recomend" id="">No estoy seguro</label>
+                </div>
+                <div>
+                    <label for="desplegable2">
+                        <strong>¿Cual es tu caracteristica favorita de codeFreeCamp?</strong>
+                        <select name="desplegable2" id="dropdown" class="text">
+                            <option value="0" disabled selected>Selecciona una opcion</option>
+                            <option value="1">Los retos</option>
+                            <option value="2">Los proyectos</option>
+                            <option value="3">La comunidad</option>
+                            <option value="4">Open Source</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <p><strong>¿Que te gustaria ver mejorado? (Marque todas las que apliquen)</strong></p>
+                    <label for="frontEnd"><input type="checkbox" name="improved" id="" value="frontEnd">Proyectos de FrontEnd</label>
+                    <label for="backEnd"><input type="checkbox" name="improved" id="" value="backEnd">Proyectos de BackEnd</label>
+                    <label for="dataVisual"><input type="checkbox" name="improved" id="" value="dataVisual">Visualizacion de datos</label>
+                    <label for="challenges"><input type="checkbox" name="improved" id="" value="challenges">Los retos</label>
+                    <label for="openSource"><input type="checkbox" name="improved" id="" value="openSource">Open Source Community</label>
+                    <label for="gitter"><input type="checkbox" name="improved" id="" value="gitter">Sala de ayuda de Gitter</label>
+                    <label for="videos"><input type="checkbox" name="improved" id="" value="videos">Los videos</label>
+                    <label for="meetups"><input type="checkbox" name="improved" id="" value="meetups">City Meetups</label>
+                    <label for="wiki"><input type="checkbox" name="improved" id="" value="wiki">Wiki</label>
+                    <label for="forum"><input type="checkbox" name="improved" id="" value="forum">Los foros</label>
+                    <label for="courses"><input type="checkbox" name="improved" id="" value="courses">Cursos adicionales</label>
+                </div>
+                <div>
+                    <label for="textarea">
+                        <strong>¿Algun comentario o sugerencia?</strong>
+                        <textarea name="textarea" id="" class="text textarea" cols="30" rows="10" placeholder="Ingresa tu comentario aqui..."></textarea>
+                    </label>
+                </div>
+                <div>
+                    <button type="submit" id="submit" class="text">Enviar</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+        </footer>
     </body>
 </html>
